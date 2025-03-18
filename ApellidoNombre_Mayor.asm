@@ -1,194 +1,75 @@
-<!DOCTYPE html>
-<!-- saved from url=(0065)https://github.com/Juanpabloperez12/ApellidoNombre_Mayor/new/main -->
-<html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark" data-a11y-animated-images="system" data-a11y-link-underlines="true" data-turbo-loaded="" class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
-.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
-.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0;}
-.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
-.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; padding: 4px 0; outline: none;}
-.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
-.ͼ2 .cm-content {caret-color: black;}
-.ͼ3 .cm-content {caret-color: white;}
-.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
-.ͼ1 .cm-layer > * {position: absolute;}
-.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
-.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
-.ͼ3 .cm-selectionBackground {background: #222;}
-.ͼ2.cm-focused .cm-selectionBackground {background: #d7d4f0;}
-.ͼ3.cm-focused .cm-selectionBackground {background: #233;}
-.ͼ1 .cm-cursorLayer {pointer-events: none;}
-.ͼ1.cm-focused .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
-@keyframes cm-blink {50% {opacity: 0;}}
-@keyframes cm-blink2 {50% {opacity: 0;}}
-.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
-.ͼ1 .cm-cursor {display: none;}
-.ͼ3 .cm-cursor {border-left-color: #444;}
-.ͼ1 .cm-dropCursor {position: absolute;}
-.ͼ1.cm-focused .cm-cursor {display: block;}
-.ͼ2 .cm-activeLine {background-color: #cceeff44;}
-.ͼ3 .cm-activeLine {background-color: #99eeff33;}
-.ͼ2 .cm-specialChar {color: red;}
-.ͼ3 .cm-specialChar {color: #f78;}
-.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; left: 0; z-index: 200;}
-.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
-.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
-.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
-.ͼ1 .cm-gutterElement {box-sizing: border-box;}
-.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
-.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
-.ͼ3 .cm-activeLineGutter {background-color: #222227;}
-.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0;}
-.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
-.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
-.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
-.ͼ3 .cm-panels {background-color: #333338; color: white;}
-.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
-.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
-.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
-.ͼ1 .cm-highlightSpace:before {content: attr(data-display); position: absolute; pointer-events: none; color: #888;}
-.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
-.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
-.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
-.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
-.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
-.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
-.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
-.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
-.ͼ2 .cm-textfield {background-color: white;}
-.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
-.ͼ1 .cm-panel.cm-search [name=close] {position: absolute; top: 0; right: 4px; background-color: inherit; border: none; font: inherit; padding: 0; margin: 0;}
-.ͼ1 .cm-panel.cm-search input, .ͼ1 .cm-panel.cm-search button, .ͼ1 .cm-panel.cm-search label {margin: .2em .6em .2em 0;}
-.ͼ1 .cm-panel.cm-search input[type=checkbox] {margin-right: .2em;}
-.ͼ1 .cm-panel.cm-search label {font-size: 80%; white-space: pre;}
-.ͼ1 .cm-panel.cm-search {padding: 2px 6px 4px; position: relative;}
-.ͼ2 .cm-searchMatch {background-color: #ffff0054;}
-.ͼ3 .cm-searchMatch {background-color: #00ffff8a;}
-.ͼ2 .cm-searchMatch-selected {background-color: #ff6a0054;}
-.ͼ3 .cm-searchMatch-selected {background-color: #ff00ff8a;}
-.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
-.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
-.ͼ6 {color: var(--codeMirror-syntax-fgColor-keyword, var(--color-codemirror-syntax-keyword));}
-.ͼ7 {color: var(--codeMirror-syntax-fgColor-comment, var(--color-codemirror-syntax-comment));}
-.ͼ8 {color: var(--codeMirror-matchingBracket-fgColor, var(--color-codemirror-matchingbracket-text));}
-.ͼ9 {color: var(--codeMirror-syntax-fgColor-string, var(--color-codemirror-syntax-string));}
-.ͼa {color: var(--codeMirror-syntax-fgColor-constant, var(--color-codemirror-syntax-constant));}
-.ͼb {color: var(--codeMirror-syntax-fgColor-constant, var(--color-codemirror-syntax-constant));}
-.ͼc {color: var(--codeMirror-syntax-fgColor-entity, var(--color-codemirror-syntax-entity));}
-.ͼd {color: var(--codeMirror-syntax-fgColor-variable, var(--color-codemirror-syntax-variable));}
-.ͼe {color: inherit;}
-.ͼf {font-weight: bold; color: inherit !important;}
-.ͼg {color: var(--codeMirror-syntax-fgColor-comment, var(--color-codemirror-syntax-comment));}
-.ͼh {text-decoration: underline;}
-.ͼi {font-style: italic;}
-.ͼj {font-weight: bold;}
-.ͼk {text-decoration: line-through;}
-.ͼ5 {background: var(--codeMirror-bgColor, var(--color-codemirror-bg)); color: var(--codeMirror-fgColor, var(--color-codemirror-text)); cursor: text;}
-.ͼ5 .cm-gutters {background: var(--codeMirror-gutters-bgColor, var(--color-codemirror-gutters-bg)); border-right-width: 0;}
-.ͼ5 .cm-lineNumbers .cm-gutterElement {color: var(--codeMirror-lineNumber-fgColor, var(--color-codemirror-linenumber-text)); font-family: var(--fontStack-monospace); font-size: var(--codeMirror-gutter-fontSize, var(--codeMirror-content-fontSize, 12px)); line-height: 20px; padding: 0 16px 0 16px;}
-.ͼ5 .cm-content {caret-color: var(--codeMirror-cursor-fgColor, var(--color-codemirror-cursor)); font-family: var(--fontStack-monospace); font-size: var(--codeMirror-content-fontSize, 12px); background: var(--codeMirror-lines-bgColor, var(--color-codemirror-lines-bg)); line-height: 20px; padding-top: 8px;}
-.ͼ5.cm-focused .cm-selectionBackground, .ͼ5 .cm-selectionBackground, .ͼ5 .cm-content ::selection {background-color: var(--codeMirror-selection-bgColor, var(--color-codemirror-selection-bg, #d7d4f0));}
-.ͼ5.cm-focused {outline: none;}
-.ͼ5.hide-help-until-focus.cm-focused .cm-panels-bottom {display: block;}
-.ͼ5.hide-help-until-focus .cm-panels-bottom {display: none;}
-.ͼ5 .cm-content ::-moz-selection {background-color: var(--codeMirror-selection-bgColor, var(--color-codemirror-selection-bg, #d7d4f0));}
-.ͼ5 .cm-activeLine {background-color: var(--codeMirror-activeline-bgColor, var(--color-codemirror-activeline-bg));}
-.ͼ5 .cm-line {padding-left: 16px;}
-.ͼ5 .cm-help-panel {background: var(--bgColor-muted, var(--color-canvas-subtle)); padding: 7px 10px; margin: 0; font-size: 13px; line-height: 16px; color: var(--fgColor-muted, var(--color-fg-muted)); cursor: default;}
-.ͼ5 .cm-panels-bottom {border-top: var(--borderWidth-thin, 1px) solid var(--borderColor-default, var(--color-border-default)); background: none;}
-.js-upload-markdown-image .ͼ5 .cm-panels-bottom {bottom: 30px !important;}
-.ͼ5 .cm-panel.cm-search {background: var(--bgColor-muted, var(--color-canvas-subtle)); padding: 8px; font-size: 16px;}
-.ͼ5 .cm-panel.cm-search > button {border-radius: 6px; padding: 4px 8px; background: var(--codeMirror-bgColor, var(--color-codemirror-bg)); color: var(--button-default-fgColor-rest, var(--color-btn-text)); border: 1px solid var(--button-default-borderColor-rest, var(--color-btn-border)); text-transform: capitalize;}
-.ͼ5 .cm-panel.cm-search > label {color: var(--fgColor-default, var(--color-fg-default)); text-transform: capitalize; font-size: 12px;}
-.ͼ5 .cm-panel.cm-search > input {border-radius: 6px; padding: 4px 8px; background: var(--bgColor-default, var(--color-canvas-default)); color: var(--fgColor-default, var(--color-fg-default)); border: 1px solid var(--borderColor-default, var(--color-border-default)); font-size: 12px;}
-.ͼ5 .cm-panel.cm-search > button[name="close"] {padding: 4px;}
-.ͼ5 .cm-panels-top {border-bottom: var(--borderWidth-thin, 1px) solid var(--color-border-default); background: none;}
-.ͼ5 .cm-panel.cm-search input, .ͼ5 .cm-panel.cm-search button, .ͼ5 .cm-panel.cm-search label {margin-right: 8px; margin-bottom: 4px; margin-top: 4px; margin-left: 0;}
-.ͼ5 .cm-lintRange {cursor: help; background-image: none !important;}
-.ͼ5 .cm-placeholder {height: 1em; color: var(--fgColor-muted);}
-.ͼ5.custom-tooltips .cm-tooltip {border: none !important; background-color: transparent !important;}
-.ͼ5.custom-tooltips .cm-diagnostic {padding: 0; margin-left: 0 !important; border-left: none !important; white-space: unset;}
-.ͼl {height: 85vh; min-height: ; width: 100%;}
-.ͼ4 {height: 85vh; min-height: ; width: 100%;}
-</style><style type="text/css">.turbo-progress-bar {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  height: 3px;
-  background: #0076ff;
-  z-index: 2147483647;
-  transition:
-    width 300ms ease-out,
-    opacity 150ms 150ms ease-in;
-  transform: translate3d(0, 0, 0);
-}
-</style>
-    
-  
-  
-  
-  
-  
-  
+.data
+mensaje_cantidad: .asciiz "Ingrese la cantidad de numeros a comparar (min 3, max 5): "
+mensaje_ingreso: .asciiz "Ingrese un numero: "
+mensaje_mayor: .asciiz "El numero mayor es: "
+numeros: .space 20  # Espacio para 5 enteros (5 * 4 bytes)
 
-  
+.text
+.globl main
 
-  <link crossorigin="anonymous" media="all" rel="stylesheet" href="./ApellidoNombre_Mayor_files/light-605318cbe3a1.css"><link crossorigin="anonymous" media="all" rel="stylesheet" href="./ApellidoNombre_Mayor_files/dark-bd1cb5575fff.css"><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-52a2075571c3.css"><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-bf3988586de0.css"><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-27a437876a92.css"><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-97f0dc959f8f.css"><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-708e3a93215a.css"><link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-9217138a8d5b.css"><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia-4397d91bdb49.css">
+main:
+    # Solicitar la cantidad de números
+    li $v0, 4
+    la $a0, mensaje_cantidad
+    syscall
 
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="./ApellidoNombre_Mayor_files/primer-primitives-225433424a87.css">
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="./ApellidoNombre_Mayor_files/primer-93aded0ee8a1.css">
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="./ApellidoNombre_Mayor_files/global-7d4d2344e7ab.css">
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="./ApellidoNombre_Mayor_files/github-d92840ce6f97.css">
-  <link crossorigin="anonymous" media="all" rel="stylesheet" href="./ApellidoNombre_Mayor_files/repository-4fce88777fa8.css">
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="./ApellidoNombre_Mayor_files/code-0210be90f4d3.css">
+    li $v0, 5   # Leer entero
+    syscall
+    move $t4, $v0  # Guardamos la cantidad
 
-  
+    # Validar que sea entre 3 y 5
+    li $t5, 3
+    blt $t4, $t5, main  # Si es menor a 3, pedir de nuevo
+    li $t5, 5
+    bgt $t4, $t5, main  # Si es mayor a 5, pedir de nuevo
 
+    # Leer los números
+    la $t0, numeros  # Dirección base del array
+    li $t1, 0        # Contador
 
-  <script type="application/json" id="client-env">{"locale":"en","featureFlags":["a11y_quote_reply_fix","allow_subscription_halted_error","contentful_lp_optimize_image","contentful_lp_hero_video_cover_image","copilot_immersive_issue_preview","copilot_new_references_ui","copilot_chat_repo_custom_instructions_preview","copilot_chat_immersive_subthreading","copilot_chat_opening_thread_switch","copilot_no_floating_button","copilot_smell_icebreaker_ux","copilot_topics_as_references","copilot_read_shared_conversation","copilot_duplicate_thread","copilot_share_active_subthread","copilot_buffered_streaming","dotcom_chat_client_side_skills","experimentation_azure_variant_endpoint","enterprise_nav_redesign","failbot_handle_non_errors","fgpat_form_ui_updates","geojson_azure_maps","ghost_pilot_confidence_truncation_25","ghost_pilot_confidence_truncation_40","github_models_gateway","github_models_o3_mini_streaming","hovercard_accessibility","insert_before_patch","issues_advanced_search","issues_react_remove_placeholders","issues_react_blur_item_picker_on_close","marketing_pages_search_explore_provider","primer_react_css_modules_ga","react_data_router_pull_requests","remove_child_patch","repository_suggester_elastic_search","sample_network_conn_type","swp_enterprise_contact_form","site_copilot_page_brand_template","site_proxima_australia_update","viewscreen_sandbox","issues_react_create_milestone","issues_react_cache_fix_workaround","lifecycle_label_name_updates","item_picker_new_select_panel","copilot_task_oriented_assistive_prompts","issues_react_assignee_warning","issue_types_prevent_private_type_creation","issues_react_grouped_diff_on_edit_history","use_paginated_organization_picker"],"login":"Juanpabloperez12"}</script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/wp-runtime-3086e64487e5.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_oddbird_popover-polyfill_dist_popover_js-9da652f58479.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_arianotify-polyfill_ariaNotify-polyfill_js-node_modules_github_mi-3abb8f-46b9f4874d95.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/ui_packages_failbot_failbot_ts-857611aed7fe.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/environment-f04cb2a9fc8c.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_primer_behaviors_dist_esm_index_mjs-0dbb79f97f8f.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_selector-observer_dist_index_esm_js-f690fd9ae3d5.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_relative-time-element_dist_index_js-f6da4b3fa34c.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_text-expander-element_dist_index_js-78748950cb0c.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_auto-complete-element_dist_index_js-node_modules_github_catalyst_-8e9f78-a74b4e0a8a6b.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_remote-inp-b5f1d7-a1760ffda83d.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_markdown-toolbar-element_dist_index_js-ceef33f593fa.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_primer_view-co-c44a69-8094ee2ecc5e.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/github-elements-394f8eb34f19.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/element-registry-0339e35021ae.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_braintree_browser-detection_dist_browser-detection_js-node_modules_githu-bb80ec-72267f4e3ff9.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_lit-html_lit-html_js-be8cb88f481b.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_morphdom_dist_morphdom-e-7c534c-a4a1922eb55f.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js-e3cbe28f1638.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-893f9f-6cf3320416b8.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_color-convert_index_js-e3180fe3bcb3.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_quote-selection_dist_index_js-node_modules_github_session-resume_-69cfcc-b9c76c3f220a.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/ui_packages_updatable-content_updatable-content_ts-2a55124d5c52.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/app_assets_modules_github_behaviors_task-list_ts-app_assets_modules_github_sso_ts-ui_packages-900dde-768abe60b1f8.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/app_assets_modules_github_sticky-scroll-into-view_ts-3e000c5d31a9.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/app_assets_modules_github_behaviors_ajax-error_ts-app_assets_modules_github_behaviors_include-87a4ae-21948f72ce0b.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/app_assets_modules_github_behaviors_commenting_edit_ts-app_assets_modules_github_behaviors_ht-83c235-e429cff6ceb1.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/behaviors-492df43ccff8.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-f6223d90c7ba.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/notifications-global-01e85cd1be94.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_virtualized-list_es_index_js-node_modules_github_template-parts_lib_index_js-94dc7a2157c1.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-70450e-eecf0d50276f.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/app_assets_modules_github_ref-selector_ts-3e9d848bab5f.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/codespaces-c3bcacfe317c.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_remote-inp-3eebbd-0763620ad7bf.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_mini-throttle_dist_decorators_js-node_modules_delegated-events_di-e161aa-9d41fb1b6c9e.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_github_remote--3c9c82-7238cfcdaa51.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/repositories-7a0dbaa42c57.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_github_catalyst_lib_inde-dbbea9-26cce2010167.js.descarga"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" src="./ApellidoNombre_Mayor_files/code-menu-1c0aedc134b1.js.descarga"></script>
-  
-  <link crossorigin="anonymous" media="all" rel="stylesheet" href="./ApellidoNombre_Mayor_files/primer-react.c161821e1194adf2d218.module.css">
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="./ApellidoNombre_Mayor_files/notifications-subscriptions-menu.1bcff9205c241e99cff2.module.css">
+leer_numeros:
+    li $v0, 4
+    la $a0, mensaje_ingreso
+    syscall
 
+    li $v0, 5  # Leer entero
+    syscall
+    sw $v0, 0($t0)  # Guardar en memoria
+
+    addi $t0, $t0, 4  # Avanzar a la siguiente posición
+    addi $t1, $t1, 1  # Incrementar contador
+    blt $t1, $t4, leer_numeros  # Si no hemos leído todos, repetir
+
+    # Buscar el mayor
+    la $t0, numeros  # Dirección base del array
+    lw $t1, 0($t0)   # Inicializar con el primer número
+    li $t2, 1        # Empezar la comparación desde el segundo número
+
+buscar_mayor:
+    beq $t2, $t4, imprimir_mayor  # Si terminamos, salir
+    addi $t0, $t0, 4  # Pasar al siguiente número
+    lw $t3, 0($t0)    # Cargar el número actual
+    bgt $t3, $t1, actualizar_mayor
+    j continuar_busqueda
+
+actualizar_mayor:
+    move $t1, $t3  # Actualizar número mayor
+
+continuar_busqueda:
+    addi $t2, $t2, 1  # Incrementar contador
+    j buscar_mayor
+
+imprimir_mayor:
+    li $v0, 4
+    la $a0, mensaje_mayor
+    syscall
+
+    li $v0, 1
+    move $a0, $t1
+    syscall
+
+    li $v0, 10  # Salir del programa
+    syscall
 
   
 
